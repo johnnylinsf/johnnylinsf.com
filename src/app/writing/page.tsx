@@ -1,11 +1,11 @@
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import Breadcrumbs from "@/components/Breadcrumbs";
-import ArticlesSection from "@/components/ArticlesSection";
+import WritingList from "@/components/WritingList";
 
 export const metadata = { title: "Writing" };
 
-export default function ArticlesPage() {
+export default function WritingPage() {
   return (
     <>
       <Header />
@@ -15,7 +15,7 @@ export default function ArticlesPage() {
           <h1 className="font-[family-name:var(--font-heading)] text-2xl font-bold tracking-tight text-foreground mb-8">
             Writing
           </h1>
-          <ArticlesSection />
+          <WritingList />
         </div>
       </main>
       <Footer />

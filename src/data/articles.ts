@@ -8,6 +8,8 @@ export const articles: Article[] = [
       "The startups I've worked at are outpacing organizations ten times their size because they're experimenting relentlessly. It's time nonprofits closed that gap.",
     date: "2026-01-17",
     wordCount: 1510,
+    recommended: true,
+    recommendedReads: ["mission-bit-attendance-system", "giving-tuesday-2024"],
   },
   {
     name: "A guide to Giving Tuesday 2024: The top four nonprofits changing lives in San Francisco",
@@ -16,6 +18,7 @@ export const articles: Article[] = [
       "A guide highlighting four nonprofits making an impact in San Francisco for Giving Tuesday.",
     date: "2024-12-03",
     wordCount: 850,
+    recommendedReads: ["why-nonprofits-cant-afford-to-wait-on-ai"],
   },
   {
     name: "Revolutionizing attendance: How I automated Mission Bit's system in just 2 months",
@@ -24,6 +27,8 @@ export const articles: Article[] = [
       "How I built and automated Mission Bit's attendance system, saving program staff dozens of hours.",
     date: "2024-10-21",
     wordCount: 750,
+    recommended: true,
+    recommendedReads: ["why-nonprofits-cant-afford-to-wait-on-ai", "ticketingnest"],
   },
   {
     name: "From problem to prom: How I built TicketingNest overnight",
@@ -32,6 +37,8 @@ export const articles: Article[] = [
       "The story behind building an event ticketing solution for schools in a single night.",
     date: "2024-10-10",
     wordCount: 550,
+    recommended: true,
+    recommendedReads: ["mission-bit-attendance-system"],
   },
   {
     name: "Meet the First-Ever Bubble-Certified Developers",

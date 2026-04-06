@@ -50,6 +50,8 @@ export interface Article {
   description?: string;
   date?: string;
   wordCount?: number;
+  recommended?: boolean;
+  recommendedReads?: string[];
 }
 
 export interface Award {

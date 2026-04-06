@@ -26,7 +26,10 @@ export function generateMetadata({
 }) {
   return params.then(({ slug }) => {
     const project = projects.find((p) => p.slug === slug);
-    return { title: project?.name ?? "Project" };
+    return {
+      title: project?.name ?? "Project",
+      description: project?.description,
+    };
   });
 }
 
@@ -107,7 +110,7 @@ export default async function ProjectPage({
                 {related.map((a) => (
                   <Link
                     key={a!.slug}
-                    href={`/articles/${a!.slug}`}
+                    href={`/writing/${a!.slug}`}
                     className="group block -mx-2 px-2 py-3 rounded-lg hover:bg-accent-light transition-colors"
                   >
                     <div className="flex items-baseline justify-between gap-3 mb-0.5">

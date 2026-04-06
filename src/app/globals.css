@@ -14,6 +14,22 @@
   --link: #2563eb;
 }
 
+@media (prefers-color-scheme: dark) {
+  :root:not(.light) {
+    --background: #121218;
+    --foreground: #e8e8ec;
+    --muted: #8b8b99;
+    --border: #26263a;
+    --card: #1a1a23;
+    --accent: #e8e8ec;
+    --accent-light: #1e1e2a;
+    --accent-dark: #d1d1d9;
+    --green: #6ee7a0;
+    --green-light: #0f1f1a;
+    --link: #8ab4f8;
+  }
+}
+
 .dark {
   --background: #121218;
   --foreground: #e8e8ec;

@@ -1,36 +1,67 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# johnnylinsf.com
 
-## Getting Started
+Personal website for Johnny Lin. Built with Next.js, Tailwind CSS, and MDX.
 
-First, run the development server:
+## Quick start
 
 ```bash
+npm install
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Open [http://localhost:3000](http://localhost:3000).
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## How to edit content
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+All content lives in `src/data/` (structured data) and `src/content/` (prose pages). You don't need to touch React components to update content.
 
-## Learn More
+### Data files (`src/data/`)
 
-To learn more about Next.js, take a look at the following resources:
+| File | What it controls |
+|------|-----------------|
+| `profile.ts` | Name, bio, location, contact info, highlights |
+| `experience.ts` | Work experience (grouped by company) |
+| `projects.ts` | Projects with descriptions, tech stacks, links |
+| `articles.ts` | Articles — `slug` for hosted, `externalUrl` for external |
+| `awards.ts` | Accomplishments with descriptions and links |
+| `skills.ts` | Skill categories and items |
+| `education.ts` | Education entries |
+| `freelancing.ts` | LLC info, availability, CTA |
+| `types.ts` | TypeScript interfaces for all data |
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+### Prose pages (`src/content/`)
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+| File | Route |
+|------|-------|
+| `charities.mdx` | `/charities` |
+| `work-with-me.mdx` | `/work-with-me` |
+| `privacy-policy.mdx` | `/privacy-policy` |
+| `bubble.mdx` | `/bubble` |
+| `articles/*.mdx` | `/articles/[slug]` |
 
-## Deploy on Vercel
+### Common tasks
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+**Add a new article:** Add an entry to `articles.ts` with a `slug` and `wordCount`, then create `src/content/articles/[slug].mdx` with the content.
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+**Add a new project:** Add an entry to `projects.ts` with a `slug`. It automatically gets a page at `/projects/[slug]`.
+
+**Add work experience:** Add an entry to `experience.ts`. Roles at the same company are auto-grouped.
+
+**Change section order on homepage:** Reorder the `<SectionShell>` blocks in `src/app/page.tsx`.
+
+## Tech stack
+
+- **Next.js 16** (App Router)
+- **Tailwind CSS** (CSS-first `@theme`)
+- **MDX** via `@next/mdx`
+- **Framer Motion** (animations)
+- **Lucide React** (icons)
+- **Vercel Analytics**
+
+## Deployment
+
+Deployed on Vercel. Push to `main` to trigger a deploy.
+
+```bash
+npm run build  # verify locally before pushing
+```
