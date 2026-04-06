@@ -1,0 +1,78 @@
+## The Problem
+
+Mission Bit, a nonprofit organization offering free coding courses, faced an inefficient and time-consuming attendance tracking process. Instructors recorded attendance on Google Sheets, while the programs team manually reviewed absences daily, sending individual notifications to parents of absent students.
+
+**Project context:**
+- Team Size: 2
+- Timeline: Under 2 months (June 2022 — August 2022)
+
+## The Challenge
+
+We needed to develop an automated attendance system to streamline the process and reduce manual work. The main challenges included:
+
+- Integrating with existing systems and workflows
+- Ensuring ease of use for instructors
+- Automating parent notifications using SMS and email
+- Completing the project within 3 months to launch in the following semester
+
+## The Approach
+
+I collaborated closely with Mission Bit's Chief Operating Officer, Cynthia Chin, to ensure all requirements were met.
+
+### Understanding the Current Process
+
+Understanding the existing process was crucial for designing an effective solution. The manual process was not only time-consuming but also prone to errors and delays.
+
+### Prototype Development and Testing
+
+Rapid iteration was essential to meet the deadline. Initial testing during development and the first week of classes helped identify bugs and improvements, which were promptly addressed.
+
+### Post-MVP Launch: Gathering Feedback
+
+Ensuring the new tool's effectiveness for all stakeholders — including instructors and program staff — was crucial. The initial MVP lacked Salesforce integration, which was essential for the programs team to import students into the system and report attendance in Salesforce. Instructors also provided feedback on UI/UX enhancements, such as adding teacher notes and viewing student information.
+
+## Challenges Encountered
+
+When building this system, unexpected challenges required creative solutions:
+
+- **Timezone issues:** An instructor taking attendance from a different timezone caused reflection issues. Solution: rounding time down to Pacific Time regardless of timezone.
+- **API errors:** Encountered errors with integrated APIs without a sustainable error viewing system. Initially used a Slack channel; later moved to Sentry for error tracking.
+- **Ensuring instructors were taking attendance:** Initially, attendance wasn't saved until all students' attendance was taken. Later modified to send instructors emails when missing specific student attendance.
+
+## The Solution
+
+A comprehensive automated attendance system that included:
+
+- A user-friendly interface for instructors to quickly mark attendance
+- Access for instructors to view student information without needing Salesforce access
+- Integration with Salesforce for real-time attendance reporting and student import
+- An automated absence notification system using Twilio for SMS and Postmark for email
+- Daily email digests to help the programs team track attendance
+
+## The Tech Stack
+
+Creating a cost-effective and easily updatable solution was vital:
+
+- **Platform:** Built on [Bubble](https://bubble.io) for quick iteration and deployment
+- **SMS:** Initially used Twilio; later switched to SMS Magic
+- **Email:** Postmark
+- **Additional Tools:** Salesforce API, Google SSO
+
+## The Results
+
+This solution led to significant improvements:
+
+- Reduced time spent on attendance-related tasks by 50%
+- Eliminated the manual review process for the programs team
+- Enhanced communication with parents through timely, automated notifications
+- Increased accuracy of attendance records
+
+## Lessons Learned
+
+- Automating essential but repetitive tasks can significantly improve organizational efficiency.
+- User-centered design is critical for the adoption of new systems.
+- Even small nonprofits like Mission Bit can greatly benefit from custom tech solutions.
+
+## Conclusion
+
+By creating an automated attendance system for Mission Bit, we not only solved an immediate operational problem but also laid the groundwork for data-driven decision-making in the future. This project highlights how targeted tech solutions can greatly impact nonprofit operations, freeing up valuable time and resources for their core mission.
