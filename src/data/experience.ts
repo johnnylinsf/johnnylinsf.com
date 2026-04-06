@@ -64,30 +64,6 @@ export const experience: Experience[] = [
     ],
   },
 
-  // Hatch
-  {
-    company: "Hatch",
-    title: "Product Management Intern",
-    duration: "August 2025 - Present",
-    website: "https://hatch.co",
-    description: [
-      "Assisting in training and refining AI tooling used in Hatch's sleep chat programs by working with our vendor and internal stakeholders",
-      "Partnering with internal stakeholders to build AI automation solutions to increase productivity and efficiency",
-    ],
-  },
-  {
-    company: "Hatch",
-    title: "Summer 2025 Product Management Intern",
-    duration: "June 2025 - August 2025",
-    website: "https://hatch.co",
-    description: [
-      "Led piloting of AI tools to support Hatch's sleep chat programs; evaluated vendors, trained models using proprietary content, and tested performance with prompt workflows and sleep consultant feedback",
-      "Supported the launch of a new hardware product by analyzing beta feedback, recruiting testers, and synthesizing insights with the research and product teams",
-      "Conducted competitive analysis of behavior loops in Sleep Cycle, Oura Ring, and Apple Watch to inform adult product strategy",
-      "Audited the new user experience for Hatch Restore 3 and recommended improvements to onboarding and engagement",
-    ],
-  },
-
   // Tella
   {
     company: "Tella",
@@ -110,6 +86,30 @@ export const experience: Experience[] = [
       "Managed 577 customer support tickets on average/month and assisted with the implementation of a new AI-powered help center, decreasing first response time by 55.2%",
       "Streamlined support operations through automation, specifically for Tella for Education, which gives educators and students six months of Tella for free through an automated eligibility form",
       "Utilized Relay.app and AI to translate customers' inquiries to English, eliminating the manual translation process",
+    ],
+  },
+
+  // Hatch
+  {
+    company: "Hatch",
+    title: "Product Management Intern",
+    duration: "August 2025 - Present",
+    website: "https://hatch.co",
+    description: [
+      "Assisting in training and refining AI tooling used in Hatch's sleep chat programs by working with our vendor and internal stakeholders",
+      "Partnering with internal stakeholders to build AI automation solutions to increase productivity and efficiency",
+    ],
+  },
+  {
+    company: "Hatch",
+    title: "Summer 2025 Product Management Intern",
+    duration: "June 2025 - August 2025",
+    website: "https://hatch.co",
+    description: [
+      "Led piloting of AI tools to support Hatch's sleep chat programs; evaluated vendors, trained models using proprietary content, and tested performance with prompt workflows and sleep consultant feedback",
+      "Supported the launch of a new hardware product by analyzing beta feedback, recruiting testers, and synthesizing insights with the research and product teams",
+      "Conducted competitive analysis of behavior loops in Sleep Cycle, Oura Ring, and Apple Watch to inform adult product strategy",
+      "Audited the new user experience for Hatch Restore 3 and recommended improvements to onboarding and engagement",
     ],
   },
 
