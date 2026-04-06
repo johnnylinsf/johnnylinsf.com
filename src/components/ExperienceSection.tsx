@@ -58,18 +58,30 @@ function groupExperience(): GroupedExperience[] {
 
   for (const e of experience) {
     const existing = groups.get(e.company);
-    const months = calcMonths(e.duration);
     if (existing) {
       existing.roles.push({ title: e.title, duration: e.duration, description: e.description });
-      existing.totalMonths += months;
     } else {
       groups.set(e.company, {
         company: e.company,
         website: e.website,
-        totalMonths: months,
+        totalMonths: 0,
         roles: [{ title: e.title, duration: e.duration, description: e.description }],
       });
     }
+  }
+
+  // Calculate total months as span from earliest start to latest end
+  for (const g of groups.values()) {
+    let earliest = new Date();
+    let latest = new Date(0);
+    for (const r of g.roles) {
+      const parts = r.duration.split(" - ");
+      const start = parseDate(parts[0]);
+      const end = parseDate(parts[1]);
+      if (start < earliest) earliest = start;
+      if (end > latest) latest = end;
+    }
+    g.totalMonths = Math.max(0, (latest.getFullYear() - earliest.getFullYear()) * 12 + (latest.getMonth() - earliest.getMonth()));
   }
 
   const result = Array.from(groups.values());
