@@ -7,7 +7,7 @@ import ProjectsSection from "@/components/ProjectsSection";
 import ExperienceSection from "@/components/ExperienceSection";
 import EducationSection from "@/components/EducationSection";
 import SkillsSection from "@/components/SkillsSection";
-import ArticlesSection from "@/components/ArticlesSection";
+import WritingSection from "@/components/WritingSection";
 import AwardsSection from "@/components/AwardsSection";
 import FreelancingSection from "@/components/FreelancingSection";
 
@@ -50,17 +50,17 @@ export default function Home() {
             title="Experience"
             seeAllHref="/experience"
           >
-            <ExperienceSection limit={4} />
+            <ExperienceSection activeOnly />
           </SectionShell>
 
           <div className="border-t border-border" />
 
           <SectionShell
-            id="articles"
+            id="writing"
             title="Writing"
             seeAllHref="/writing"
           >
-            <ArticlesSection limit={3} />
+            <WritingSection limit={3} />
           </SectionShell>
 
           <div className="border-t border-border" />

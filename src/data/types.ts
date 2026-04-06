@@ -43,7 +43,7 @@ export interface SkillGroup {
   items: string[];
 }
 
-export interface Article {
+export interface WritingEntry {
   name: string;
   slug?: string;
   externalUrl?: string;

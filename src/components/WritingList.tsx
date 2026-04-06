@@ -1,7 +1,7 @@
 "use client";
 
 import { useState } from "react";
-import { articles } from "@/data/articles";
+import { articles } from "@/data/writing";
 import Link from "next/link";
 import { ArrowRight, ArrowUpRight, Search, X } from "lucide-react";
 

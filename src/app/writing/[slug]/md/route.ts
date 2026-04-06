@@ -1,4 +1,4 @@
-import { articles } from "@/data/articles";
+import { articles } from "@/data/writing";
 import { readFile } from "fs/promises";
 import { join } from "path";
 import { NextResponse } from "next/server";

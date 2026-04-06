@@ -1,4 +1,4 @@
-import { articles } from "@/data/articles";
+import { articles } from "@/data/writing";
 import { NextResponse } from "next/server";
 
 export const dynamic = "force-static";

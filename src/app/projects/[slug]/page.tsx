@@ -1,6 +1,6 @@
 import { notFound } from "next/navigation";
 import { projects } from "@/data/projects";
-import { articles } from "@/data/articles";
+import { articles } from "@/data/writing";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import Breadcrumbs from "@/components/Breadcrumbs";
@@ -131,7 +131,7 @@ export default async function ProjectPage({
             if (related.length === 0) return null;
             return (
               <div className="mt-8">
-                <p className="text-xs text-muted/60 uppercase tracking-wide mb-2">Related articles</p>
+                <p className="text-xs text-muted/60 uppercase tracking-wide mb-2">Related writing</p>
                 {related.map((a) => (
                   <Link
                     key={a!.slug}

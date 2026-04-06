@@ -147,10 +147,15 @@ function RoleItem({ role }: { role: GroupedExperience["roles"][0] }) {
 
 export default function ExperienceSection({
   limit,
+  activeOnly,
 }: {
   limit?: number;
+  activeOnly?: boolean;
 }) {
-  const grouped = groupExperience();
+  let grouped = groupExperience();
+  if (activeOnly) {
+    grouped = grouped.filter((g) => g.roles.some((r) => r.duration.includes("Present")));
+  }
   const items = limit ? grouped.slice(0, limit) : grouped;
 
   return (

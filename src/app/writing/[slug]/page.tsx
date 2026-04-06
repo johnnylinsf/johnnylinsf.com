@@ -1,5 +1,5 @@
 import { notFound } from "next/navigation";
-import { articles } from "@/data/articles";
+import { articles } from "@/data/writing";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import Breadcrumbs from "@/components/Breadcrumbs";
@@ -64,7 +64,7 @@ export default async function ArticlePage({
       <Header />
       <main className="flex-1">
         <article className="mx-auto max-w-2xl px-6 pt-14 pb-12">
-          <Breadcrumbs items={[{ label: "Writing", href: "/articles" }, { label: article.name }]} />
+          <Breadcrumbs items={[{ label: "Writing", href: "/writing" }, { label: article.name }]} />
           <header className="mb-8">
             <h1 className="font-[family-name:var(--font-heading)] text-3xl font-bold tracking-tight text-foreground mb-3">
               {article.name}

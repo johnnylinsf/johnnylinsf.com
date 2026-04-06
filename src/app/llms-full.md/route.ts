@@ -1,4 +1,4 @@
-import { articles } from "@/data/articles";
+import { articles } from "@/data/writing";
 import { projects } from "@/data/projects";
 import { profile } from "@/data/profile";
 import { experience } from "@/data/experience";

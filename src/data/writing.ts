@@ -1,6 +1,6 @@
-import { Article } from "./types";
+import { WritingEntry } from "./types";
 
-export const articles: Article[] = [
+export const articles: WritingEntry[] = [
   {
     name: "Why nonprofits can't afford to wait on AI",
     slug: "why-nonprofits-cant-afford-to-wait-on-ai",

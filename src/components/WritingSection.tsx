@@ -1,4 +1,4 @@
-import { articles } from "@/data/articles";
+import { articles } from "@/data/writing";
 import Link from "next/link";
 import { ArrowRight, ArrowUpRight } from "lucide-react";
 
@@ -10,7 +10,7 @@ function formatDate(date: string) {
   });
 }
 
-export default function ArticlesSection({
+export default function WritingSection({
   limit,
   filter,
 }: {

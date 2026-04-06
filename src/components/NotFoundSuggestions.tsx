@@ -2,7 +2,7 @@
 
 import { usePathname } from "next/navigation";
 import Link from "next/link";
-import { articles } from "@/data/articles";
+import { articles } from "@/data/writing";
 import { projects } from "@/data/projects";
 import { ArrowRight } from "lucide-react";
 
