@@ -1,6 +1,8 @@
 import { experience } from "@/data/experience";
 import { NextResponse } from "next/server";
 
+export const dynamic = "force-static";
+
 export async function GET() {
   const grouped = new Map<string, typeof experience>();
   for (const e of experience) {

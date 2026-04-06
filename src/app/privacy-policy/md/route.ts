@@ -2,6 +2,8 @@ import { readFile } from "fs/promises";
 import { join } from "path";
 import { NextResponse } from "next/server";
 
+export const dynamic = "force-static";
+
 export async function GET() {
   const content = await readFile(join(process.cwd(), "src/content/privacy-policy.mdx"), "utf-8");
   const markdown = `# Privacy Policy\n\n${content}`;

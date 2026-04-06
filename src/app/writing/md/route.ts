@@ -1,6 +1,8 @@
 import { articles } from "@/data/articles";
 import { NextResponse } from "next/server";
 
+export const dynamic = "force-static";
+
 export async function GET() {
   const lines = ["# Writing", ""];
 

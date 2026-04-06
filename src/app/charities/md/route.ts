@@ -2,6 +2,8 @@ import { readFile } from "fs/promises";
 import { join } from "path";
 import { NextResponse } from "next/server";
 
+export const dynamic = "force-static";
+
 export async function GET() {
   const content = await readFile(join(process.cwd(), "src/content/charities.mdx"), "utf-8");
   const markdown = `# Charities I've supported and care about\n\n${content}`;

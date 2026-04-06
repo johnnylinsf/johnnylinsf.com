@@ -8,6 +8,8 @@ import { skills } from "@/data/skills";
 import { freelancing } from "@/data/freelancing";
 import { NextResponse } from "next/server";
 
+export const dynamic = "force-static";
+
 export async function GET() {
   const sections: string[] = [];
 
