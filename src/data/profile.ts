@@ -3,7 +3,7 @@ import { Profile } from "./types";
 export const profile: Profile = {
   name: "Johnny",
   headline: "Hi, I'm Johnny. 👋",
-  bio: "I'm currently studying Electrical Engineering and Computer Science (EECS) at UC Berkeley! (and about to graduate!)",
+  bio: "I'm currently studying Electrical Engineering and Computer Science (EECS) at UC Berkeley!",
   location: "San Francisco Bay Area",
   contact: {
     email: "johnny@johnnylinsf.com",
