@@ -20,7 +20,7 @@ Add a new article/blog post to johnnylinsf.com.
 
 3. Count the words in the content
 
-4. Add an entry to `src/data/articles.ts`:
+4. Add an entry to `src/data/writing.ts`:
    ```ts
    {
      name: "Title",

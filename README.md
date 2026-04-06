@@ -20,9 +20,9 @@ All content lives in `src/data/` (structured data) and `src/content/` (prose pag
 | File | What it controls |
 |------|-----------------|
 | `profile.ts` | Name, bio, location, contact info, highlights |
-| `experience.ts` | Work experience (grouped by company) |
+| `experience.ts` | Work experience (grouped by company, sorted by recency) |
 | `projects.ts` | Projects with descriptions, tech stacks, links |
-| `articles.ts` | Articles — `slug` for hosted, `externalUrl` for external |
+| `writing.ts` | Writing — `slug` for hosted, `externalUrl` for external |
 | `awards.ts` | Accomplishments with descriptions and links |
 | `skills.ts` | Skill categories and items |
 | `education.ts` | Education entries |
@@ -37,22 +37,41 @@ All content lives in `src/data/` (structured data) and `src/content/` (prose pag
 | `work-with-me.mdx` | `/work-with-me` |
 | `privacy-policy.mdx` | `/privacy-policy` |
 | `bubble.mdx` | `/bubble` |
-| `articles/*.mdx` | `/articles/[slug]` |
+| `articles/*.mdx` | `/writing/[slug]` |
 
 ### Common tasks
 
-**Add a new article:** Add an entry to `articles.ts` with a `slug` and `wordCount`, then create `src/content/articles/[slug].mdx` with the content.
+**Add new writing:** Add an entry to `writing.ts` with a `slug` and `wordCount`, then create `src/content/articles/[slug].mdx` with the content.
 
 **Add a new project:** Add an entry to `projects.ts` with a `slug`. It automatically gets a page at `/projects/[slug]`.
 
-**Add work experience:** Add an entry to `experience.ts`. Roles at the same company are auto-grouped.
+**Add work experience:** Add an entry to `experience.ts`. Roles at the same company are auto-grouped. Active roles float to the top.
 
 **Change section order on homepage:** Reorder the `<SectionShell>` blocks in `src/app/page.tsx`.
+
+## Agent-friendly
+
+Every page has a `.md` endpoint (e.g. `/writing/my-post.md`). Also:
+
+- `/llms.txt` — structured overview for LLMs
+- `/llms-full.md` — complete site content as markdown
+- `/sitemap.xml` — auto-generated sitemap
+- `/robots.txt` — allows all crawlers
+
+## Claude skills
+
+Run these in Claude Code with `/`:
+
+- `/add-writing` — add a new blog post
+- `/add-project` — add a new project
+- `/add-experience` — add work experience
+- `/update-profile` — update bio, highlights, contact
+- `/deploy` — build, commit, push
 
 ## Tech stack
 
 - **Next.js 16** (App Router)
-- **Tailwind CSS** (CSS-first `@theme`)
+- **Tailwind CSS v4** (CSS-first `@theme`)
 - **MDX** via `@next/mdx`
 - **Framer Motion** (animations)
 - **Lucide React** (icons)
