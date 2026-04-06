@@ -59,14 +59,14 @@ export const projects: Project[] = [
   },
   {
     name: "OperationSTART Platform",
-    slug: "operationstart-platform",
+    slug: "operationstart",
     status: "past",
     startDate: "2020-07-18",
     endDate: "2025-06-30",
-    link: "https://operationstart.org",
     description:
-      "The platform for OperationSTART, a youth-led organization I co-founded in 2020 that works to bridge the opportunity divide. Everything on the platform is customized to the needs of OperationSTART to fulfill their mission.",
+      "OperationSTART started as a project my friends and I built during junior year of high school in 2020, right in the middle of COVID. We noticed that finding enrichment opportunities — internships, programs, summer activities — required a lot of digging. The opportunities existed, but they weren't widely marketed or easy to find unless you were already plugged in.\n\nAs SEO Scholars, we knew about some of these programs, but we realized most students didn't. So we set out to democratize access by building a single platform where students in San Francisco could discover and apply to opportunities that were already out there.\n\nWhat began as an idea evolved into a resource that hundreds of students used over five years.\n\nOn June 30, 2025, we made the difficult decision to shut down OperationSTART. The work and mission continue — we encourage anyone looking for similar resources to visit [Our415](https://our415.org), an initiative led by the San Francisco Department of Children, Youth and Their Families.",
     techStack: ["Bubble"],
+    relatedArticles: ["giving-tuesday-2024"],
   },
   {
     name: "Mission Bit Instructor's Portal",

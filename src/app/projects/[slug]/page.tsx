@@ -8,6 +8,27 @@ import Badge from "@/components/ui/Badge";
 import Link from "next/link";
 import { ExternalLink, ArrowRight } from "lucide-react";
 
+function renderDescription(text: string) {
+  const parts = text.split(/(\[[^\]]+\]\([^)]+\))/g);
+  return parts.map((part, i) => {
+    const match = part.match(/\[([^\]]+)\]\(([^)]+)\)/);
+    if (match) {
+      return (
+        <a
+          key={i}
+          href={match[2]}
+          target="_blank"
+          rel="noopener noreferrer"
+          className="text-link underline decoration-link/30 hover:decoration-link"
+        >
+          {match[1]}
+        </a>
+      );
+    }
+    return <span key={i}>{part}</span>;
+  });
+}
+
 function formatDate(date: string) {
   return new Date(date).toLocaleDateString("en-US", {
     year: "numeric",
@@ -64,9 +85,13 @@ export default async function ProjectPage({
           </p>
 
           {project.description && (
-            <p className="text-foreground leading-relaxed mb-6">
-              {project.description}
-            </p>
+            <div className="space-y-4 mb-6">
+              {project.description.split("\n\n").map((para, i) => (
+                <p key={i} className="text-foreground/80 leading-relaxed">
+                  {renderDescription(para)}
+                </p>
+              ))}
+            </div>
           )}
 
           {project.techStack && project.techStack.length > 0 && (
