@@ -2,6 +2,16 @@ import { WritingEntry } from "./types";
 
 export const articles: WritingEntry[] = [
   {
+    name: "Learn AI This Summer",
+    slug: "ai-literacy",
+    description:
+      "AI literacy is becoming the baseline expectation employers have and for students entering the workforce, learning it now is the difference between walking in ahead of the curve or already behind.",
+    date: "2026-06-17",
+    wordCount: 1050,
+    recommended: true,
+    recommendedReads: ["why-nonprofits-cant-afford-to-wait-on-ai"],
+  },
+  {
     name: "Why nonprofits can't afford to wait on AI",
     slug: "why-nonprofits-cant-afford-to-wait-on-ai",
     description:
