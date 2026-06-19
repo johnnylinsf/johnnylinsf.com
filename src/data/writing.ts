@@ -2,7 +2,7 @@ import { WritingEntry } from "./types";
 
 export const articles: WritingEntry[] = [
   {
-    name: "AI literacy",
+    name: "Learn AI This Summer",
     slug: "ai-literacy",
     description:
       "AI literacy is becoming the baseline expectation employers have and for students entering the workforce, learning it now is the difference between walking in ahead of the curve or already behind.",
