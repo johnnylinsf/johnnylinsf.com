@@ -3,7 +3,7 @@ import { Profile } from "./types";
 export const profile: Profile = {
   name: "Johnny",
   headline: "Hi, I'm Johnny. 👋",
-  bio: "I'm currently studying Electrical Engineering and Computer Science (EECS) at UC Berkeley!",
+  bio: "I recently graduated with a degree in Electrical Engineering and Computer Science (EECS) from UC Berkeley!",
   location: "San Francisco Bay Area",
   contact: {
     email: "johnny@johnnylinsf.com",
@@ -15,8 +15,7 @@ export const profile: Profile = {
     "I lead Operations at [Tella](https://tella.com)",
     "I'm a Senior Development Specialist at [Mission Bit](https://missionbit.org)",
     "I'm a [Bubble](https://bubble.io) power user and [certified developer](https://bubble.io/certificate/xkky8ygt4g83). Bubble Ambassador since 2024.",
-    "I'm a [Notion Campus Leader](https://notion.so/community) at UC Berkeley (since spring 2023)",
     "If you know me, I give back to my community a lot - [here are some charities I've supported and care about](/charities)",
   ],
-  lastUpdated: "2026-04-05",
+  lastUpdated: "2026-06-19",
 };
