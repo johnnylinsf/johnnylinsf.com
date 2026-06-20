@@ -7,6 +7,10 @@ export const experience: Experience[] = [
     title: "Senior Development Specialist",
     duration: "January 2026 - Present",
     website: "https://missionbit.org",
+    description: [
+      "Manage the donor cultivation process and collaborate with the CEO to build a map of different donor types, based on how they've engaged with the organization in the past, to ensure an internally defined and intentional pathway for each donor type",
+      "Develop guides and processes to train upcoming development team members and ensure standard operating procedures are followed throughout the training for consistency and efficiency across the team",
+    ],
   },
   {
     company: "Mission Bit",
@@ -71,10 +75,11 @@ export const experience: Experience[] = [
     duration: "August 2025 - Present",
     website: "https://tella.com",
     description: [
-      "Managing day-to-day company operations, including product support",
-      "Drive the SOC 2 Security Compliance process, including vendor assessments, coordinating with teammates, and assisting with writing company policies",
-      "Deploying product updates to Tella",
-      "Leading special projects that the Co-Founders want to be worked on",
+      "Managing day-to-day company operations, including compliance and disputing chargebacks",
+      "Improved product support efficiency by empowering customers to self-service with a custom \"Ask AI\" support agent in-app before escalating to the team, freeing up time for more pressing tickets while also improving help documentation",
+      "Drive the SOC 2 Security Compliance process, which consists of vendor assessments, coordinating with teammates to ensure compliance, and assisting with writing company policies, showing customers that Tella is SOC 2 compliant",
+      "Deploying product updates to Tella, like our Document Generation integrations with Linear and Notion",
+      "Leading special projects",
     ],
   },
   {
@@ -83,8 +88,8 @@ export const experience: Experience[] = [
     duration: "December 2024 - August 2025",
     website: "https://tella.com",
     description: [
-      "Managed 577 customer support tickets on average/month and assisted with the implementation of a new AI-powered help center, decreasing first response time by 55.2%",
-      "Streamlined support operations through automation, specifically for Tella for Education, which gives educators and students six months of Tella for free through an automated eligibility form",
+      "Managed 577 customer support tickets on average/month and assisted with the implementation of a new AI-powered help center, ensuring it is regularly updated and decreasing first response time by 55.2% after joining the team",
+      "Streamlined support operations through automation, specifically for Tella for Education, which gives educators and students six months of Tella for free through an automated form determining eligibility",
       "Utilized Relay.app and AI to translate customers' inquiries to English, eliminating the manual translation process",
     ],
   },
@@ -93,23 +98,18 @@ export const experience: Experience[] = [
   {
     company: "Hatch",
     title: "Product Management Intern",
-    duration: "August 2025 - Present",
-    website: "https://hatch.co",
-    description: [
-      "Assisting in training and refining AI tooling used in Hatch's sleep chat programs by working with our vendor and internal stakeholders",
-      "Partnering with internal stakeholders to build AI automation solutions to increase productivity and efficiency",
-    ],
-  },
-  {
-    company: "Hatch",
-    title: "Summer 2025 Product Management Intern",
-    duration: "June 2025 - August 2025",
+    duration: "June 2025 - Present",
     website: "https://hatch.co",
     description: [
       "Led piloting of AI tools to support Hatch's sleep chat programs; evaluated vendors, trained models using proprietary content, and tested performance with prompt workflows and sleep consultant feedback",
       "Supported the launch of a new hardware product by analyzing beta feedback, recruiting testers, and synthesizing insights with the research and product teams",
       "Conducted competitive analysis of behavior loops in Sleep Cycle, Oura Ring, and Apple Watch to inform adult product strategy",
       "Audited the new user experience for Hatch Restore 3 and recommended improvements to onboarding and engagement",
+      "Researched referral platforms and delivered a vendor recommendation to support growth initiatives",
+      "Assisted in prototyping AI tooling used in Hatch's sleep chat programs by working with our vendor and internal stakeholders",
+      "Partner with internal stakeholders on the Content, Customer Support, and People Operations/HR teams to build AI automation solutions, mapping out their workflows and empowering them to discover and build automation solutions on their own",
+      "Trained team members on best practices for vibe coding, showcasing examples like Lulu's Late Night, and empowering team members to create a microsite by vibe coding using Claude Code",
+      "Worked with team members to scope and build new internal products and tooling",
     ],
   },
 
@@ -128,7 +128,7 @@ export const experience: Experience[] = [
   {
     company: "Notion",
     title: "Campus Leader @ UC Berkeley",
-    duration: "January 2023 - Present",
+    duration: "January 2023 - June 2026",
     website: "https://notion.so",
     description: [
       "Hosted two pop-up events for 600+ students to foster the Notion community on-campus",
