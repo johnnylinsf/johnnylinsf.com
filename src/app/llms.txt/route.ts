@@ -20,6 +20,7 @@ export async function GET() {
     { path: "/projects", label: "Projects" },
     { path: "/work-with-me", label: "Work with me" },
     { path: "/bubble", label: "Bubble Experience" },
+    { path: "/stack", label: "Tech Stack" },
     { path: "/charities", label: "Charities" },
     { path: "/privacy-policy", label: "Privacy Policy" },
   ];

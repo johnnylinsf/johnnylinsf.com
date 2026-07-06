@@ -19,7 +19,11 @@ export default function SkillsSection() {
         <Link href="/bubble" className="text-link underline decoration-link/30 hover:decoration-link">
           this page
         </Link>
-        .
+        . See the{" "}
+        <Link href="/stack" className="text-link underline decoration-link/30 hover:decoration-link">
+          tech stack
+        </Link>{" "}
+        I'm currently using.
       </p>
       {skills.map((group) => (
         <Collapsible key={group.category} title={group.category}>

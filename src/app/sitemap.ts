@@ -12,6 +12,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     "/projects",
     "/work-with-me",
     "/bubble",
+    "/stack",
     "/charities",
     "/privacy-policy",
     "/llms.txt",
