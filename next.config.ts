@@ -11,6 +11,7 @@ const nextConfig: NextConfig = {
     { source: "/charities.md", destination: "/charities/md" },
     { source: "/work-with-me.md", destination: "/work-with-me/md" },
     { source: "/bubble.md", destination: "/bubble/md" },
+    { source: "/stack.md", destination: "/stack/md" },
     { source: "/privacy-policy.md", destination: "/privacy-policy/md" },
   ],
   images: {
