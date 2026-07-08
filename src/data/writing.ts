@@ -8,7 +8,6 @@ export const articles: WritingEntry[] = [
       "Once you understand that AI matters, the next step is doing something with it. Vibe coding lowers the barrier to entry: you don't need to know every technical detail, just a real problem you can describe clearly.",
     date: "2026-07-08",
     wordCount: 1400,
-    recommended: true,
     recommendedReads: ["ai-literacy", "mission-bit-attendance-system"],
   },
   {
