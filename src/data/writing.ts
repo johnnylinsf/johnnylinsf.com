@@ -2,6 +2,16 @@ import { WritingEntry } from "./types";
 
 export const articles: WritingEntry[] = [
   {
+    name: "The best way to learn AI is to build with it",
+    slug: "start-building",
+    description:
+      "Once you understand that AI matters, the next step is doing something with it. Vibe coding lowers the barrier to entry: you don't need to know every technical detail, just a real problem you can describe clearly.",
+    date: "2026-07-08",
+    wordCount: 1400,
+    recommended: true,
+    recommendedReads: ["ai-literacy"],
+  },
+  {
     name: "Learn AI This Summer",
     slug: "ai-literacy",
     description:
@@ -9,7 +19,7 @@ export const articles: WritingEntry[] = [
     date: "2026-06-17",
     wordCount: 1050,
     recommended: true,
-    recommendedReads: ["why-nonprofits-cant-afford-to-wait-on-ai"],
+    recommendedReads: ["why-nonprofits-cant-afford-to-wait-on-ai", "start-building"],
   },
   {
     name: "Why nonprofits can't afford to wait on AI",
@@ -37,7 +47,6 @@ export const articles: WritingEntry[] = [
       "How I built and automated Mission Bit's attendance system, saving program staff dozens of hours.",
     date: "2024-10-21",
     wordCount: 750,
-    recommended: true,
     recommendedReads: ["why-nonprofits-cant-afford-to-wait-on-ai", "ticketingnest"],
   },
   {
@@ -47,7 +56,6 @@ export const articles: WritingEntry[] = [
       "The story behind building an event ticketing solution for schools in a single night.",
     date: "2024-10-10",
     wordCount: 550,
-    recommended: true,
     recommendedReads: ["mission-bit-attendance-system"],
   },
   {
