@@ -1,0 +1,205 @@
+In my [last piece](/writing/ai-literacy), I wrote about why AI literacy matters for students entering the workforce.
+
+This is the follow-up: **once you understand that AI matters, the next step is figuring out what to actually do with it.**
+
+For a lot of people, I think the best place to start is building.
+
+Not because everyone needs to become a software engineer. Not because everyone needs to launch a startup. But because building something real is one of the fastest ways to stop treating AI like an abstract concept and start understanding how to use it.
+
+> 💡 That is where vibe coding comes in.
+
+## The problem
+
+A lot of people have ideas for tools, websites, automations, or internal systems, but never start building them.
+
+Not because the ideas are bad.
+
+Because the first step feels too technical, or they don't know where to start.
+
+They do not know what stack to use. They do not know what files to create. They do not know what counts as good enough. They might not even know how to describe the thing they want in technical terms.
+
+This is especially true for students and early-career people. You can understand that AI is important, but still feel stuck when it comes time to actually do something with it.
+
+Vibe coding changes the starting point.
+
+## What vibe coding actually is
+
+Vibe coding is building software by describing what you want in plain English and using AI to help generate, edit, and debug the code.
+
+Instead of starting with a blank page, you start with a conversation.
+
+You explain what you want, test what the AI gives you, then keep refining it.
+
+The skill is not memorizing every syntax rule. The skill is learning how to describe the problem clearly, test the output, and ask better follow-up questions. [This is why I like PRDs](https://www.lennysnewsletter.com/i/683946/1-pagersprds).
+
+That is why I think vibe coding is such a natural next step after AI literacy. AI literacy helps you understand the tools. Vibe coding helps you do something with them. They play hand in hand together.
+
+## Why this matters
+
+The biggest opportunity with vibe coding is not that everyone suddenly becomes a software engineer overnight.
+
+**The opportunity is that more people can start.**
+
+For example:
+
+- A student can build a simple study tool.
+- A nonprofit staff member can prototype an internal tracker.
+- A small business owner can create a landing page.
+- A program manager can test an automation before asking for budget.
+- An aspiring founder can get a version of their idea in front of people faster.
+
+That first version might be messy. It might break. It might need review from someone more technical before it becomes production-ready.
+
+But it exists.
+
+And having something real to react to is very different from having an idea sitting in your notes app.
+
+## Fluency comes from doing
+
+[In the AI literacy piece](/writing/ai-literacy), I wrote about how employers are increasingly looking for people who can use AI tools day-to-day.
+
+That does not come from watching a few videos or reading a few posts.
+
+It comes from using the tools on real problems.
+
+Vibe coding is useful because it forces you to practice the parts of AI fluency that actually matter:
+
+- describing a problem clearly
+- breaking a big idea into smaller steps
+- judging whether an output is good
+- testing something instead of assuming it works
+- asking better follow-up questions
+- knowing when you need human review
+
+Those skills carry far beyond coding.
+
+Even if the thing you build is small, the process teaches you how to think with AI instead of just asking AI for answers.
+
+## The best way to start
+
+Do not start by trying to build your dream product.
+
+Start with a small, annoying problem.
+
+A good first vibe coding project should be:
+
+- easy to describe
+- low-risk
+- personally useful
+- small enough to finish in one sitting
+- not dependent on sensitive data
+
+Some examples:
+
+- a webpage that turns messy notes into action items
+- a calculator for an event budget
+- a simple form for collecting interest in a program
+- a personal dashboard
+- a tool that formats an email draft
+- a landing page for an idea
+- a checklist generator for a recurring workflow
+
+The goal is not to build something impressive.
+
+The goal is to build momentum.
+
+Once you build one small thing, the next thing feels less intimidating.
+
+## A simple first prompt
+
+The best prompts usually start with a real problem.
+
+A recent example for me was using Salesforce at [Mission Bit](https://missionbit.org). I have been trying to use Salesforce more consistently on the development team at Mission Bit, but the hard part is that it requires a lot of manual data entry. If the system depends on people remembering to log every update, it will probably fall apart.
+
+What I wanted was something closer to autopilot: an AI-powered workflow that could minimize data entry and make Salesforce feel less like another task people had to remember. It should be smart and surface relevant, important information to my team and me.
+
+So instead of starting with the technical implementation, I started by explaining the problem to Claude.
+
+**The prompt was basically:**
+
+> I work on the development team at a nonprofit and we are having a hard time adopting Salesforce because it requires too much manual data entry. I want a system that feels more on autopilot and is powered by AI so the team can spend less time entering data manually. Help me think through a solution that could capture relevant donor, grant, and relationship updates with as little manual work as possible. This could be AI driven, or low lift for the team.
+
+That was enough to start.
+
+Claude did not need me to know the full architecture upfront. It helped me break down the problem, think through what information needed to be captured, and outline a first version of the system.
+
+That is the point of vibe coding. You do not need to start with, "Build me a perfect app." You can start with:
+
+> Here is the workflow that is broken. Here is why it is annoying. Here is what I wish existed.
+
+**A more general version of that prompt would be:**
+
+> I am trying to solve [specific problem] for [specific team or user]. Right now, the problem is [what is currently painful or manual]. I want a first version that [desired outcome]. Help me think through the simplest possible solution, then suggest how to build it.
+
+> ✅ You do not need the perfect prompt. You need a real problem and enough context for the AI to help you find a first version.
+
+## Be specific before the first version
+
+One mistake people make with vibe coding is being too vague upfront.
+
+You should not just say, "Build me an app," and hope the AI figures out what you mean. That is how you end up with something generic that technically works but does not solve the actual problem.
+
+The better approach is to be clear in your prompt about what you want before the first version gets built. Again, this is why [I like PRDs](https://www.lennysnewsletter.com/i/683946/1-pagersprds).
+
+Spell out the problem. Explain who it is for. Describe the workflow that is broken. Say what the tool should do, what it should avoid, and what a useful first version looks like.
+
+For the Salesforce example, I should not just ask Claude to "make Salesforce easier." I need to explain that the development team is struggling with adoption because the current process relies on manual data entry, and that I want a lower-lift workflow that captures donor, grant, and relationship updates without requiring people to remember every step.
+
+That level of detail matters.
+
+A better first prompt should include:
+
+- **Who the tool is for**
+- **What problem they are facing**
+- **What currently makes the workflow painful**
+- **What the ideal workflow should feel like**
+- **What data or inputs the system needs**
+- **What the first version should include**
+- **What should be out of scope for now**
+
+> 🎯 The clearer you are upfront, the better the first version will be.
+
+You will still need to test, refine, and ask follow-up questions. But the goal is not to use vague prompts and fix everything later. The goal is to give the AI enough context at the beginning so that the first version is actually pointed in the right direction.
+
+## What vibe coding is not
+
+Vibe coding is not magic.
+
+It does not remove the need for good judgment.
+
+You still need to be careful with:
+
+- privacy
+- security
+- accessibility
+- reliability
+
+You should not paste sensitive personal, financial, health, or student data into random tools. You should not deploy something important without testing it. And if the tool will handle real users, payments, or sensitive information, you should get a technical person to review it.
+
+Use vibe coding to prototype, learn, and build confidence.
+
+**Use human judgment before putting something critical into the world.**
+
+## The bigger point
+
+The biggest lesson is that the barrier to entry is lower than most people think.
+
+You do not need to understand every technical detail before you begin. You just need to understand the problem clearly enough to describe it.
+
+Start small. Build one thing. Test it. Improve it.
+
+That process will teach you more than reading another thread about which tool is best.
+
+The best way to learn vibe coding is to try it on a problem you actually care about.
+
+## Conclusion
+
+AI literacy is the foundation. Vibe coding is one way to turn that literacy into action.
+
+Not every prototype needs to become a company. Not every project needs to scale. Not every tool needs to be perfect.
+
+Sometimes the win is simply realizing that an idea you had in your head can become something real.
+
+That shift is powerful.
+
+**Because once people realize they can build the first version, they stop waiting for permission to start.**
