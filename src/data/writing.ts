@@ -9,7 +9,7 @@ export const articles: WritingEntry[] = [
     date: "2026-07-08",
     wordCount: 1400,
     recommended: true,
-    recommendedReads: ["ai-literacy", "mission-bit-attendance-system"],
+    recommendedReads: ["ai-literacy"],
   },
   {
     name: "Learn AI This Summer",
