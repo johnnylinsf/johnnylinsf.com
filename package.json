@@ -2,6 +2,14 @@
   "name": "johnnylinsf.com",
   "version": "0.1.0",
   "private": true,
+  "description": "Personal website for Johnny Lin — johnnylinsf.com",
+  "author": "Johnny Lin <johnny@johnnylinsf.com> (https://johnnylinsf.com)",
+  "license": "SEE LICENSE IN LICENSE",
+  "homepage": "https://johnnylinsf.com",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/johnnylinsf/johnnylinsf.com.git"
+  },
   "scripts": {
     "dev": "next dev",
     "build": "next build",
