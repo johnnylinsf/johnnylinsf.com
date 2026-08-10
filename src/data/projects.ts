@@ -1,10 +1,29 @@
 import { Project } from "./types";
 
 export const projects: Project[] = [
+    {
+    name: "CalGo",
+    slug: "calgo",
+    status: "current",
+    startDate: "2026-06-22",
+    endDate: "2026-08-10",
+    link: "https://calgo-cs160.vercel.app",
+    description:
+      "A campus amenities map for UC Berkeley, built with Team 404 for CS 160 (User Interface Design and Development), Studio B. Campus information isn't missing — it's scattered, so finding a gender-inclusive restroom or a bottle-filling station in an unfamiliar building means checking several university sites, a map, and the signs on the door.\n\nCalGo puts 1,525 amenities across 255 campus buildings on one map — restrooms, water fountains, bottle-filling stations, printers, eateries, and lactation rooms — with the floor, the hours, and the accessibility attributes attached to each one. It works without an account, filters by distance, opens within the window, supports accessibility, and hands off to Apple Maps, Google Maps, or Waze for routing.\n\nThe project ran the full design cycle: six needfinding interviews, 33 sketches, two paper prototypes, five competing wireframes, a Figma hi-fi round, and a final usability evaluation whose findings all shipped. Every task in the final evaluation beat its time goal. The whole process is written up as a [case study](https://calgo-cs160.vercel.app/story).",
+    techStack: [
+      "React",
+      "Vite",
+      "Leaflet",
+      "Firebase",
+      "Tailwind CSS",
+      "Figma",
+      "Vercel",
+    ],
+  },
   {
     name: "What was here?",
     slug: "what-was-here",
-    status: "current",
+    status: "past",
     startDate: "2026-03-14",
     link: "https://wwh.johnnylinsf.com",
     description:
