@@ -1,7 +1,7 @@
 import { Project } from "./types";
 
 export const projects: Project[] = [
-    {
+  {
     name: "CalGo",
     slug: "calgo",
     status: "current",
@@ -19,16 +19,6 @@ export const projects: Project[] = [
       "Figma",
       "Vercel",
     ],
-  },
-  {
-    name: "What was here?",
-    slug: "what-was-here",
-    status: "past",
-    startDate: "2026-03-14",
-    link: "https://wwh.johnnylinsf.com",
-    description:
-      "Fun project to explore San Francisco's Archaeology. Search any address to see what used to be there and what is still currently there - all powered by public city data.",
-    techStack: ["Vercel", "Claude"],
   },
   {
     name: "Internal project: Mission Bit Volunteer Portal",
@@ -53,6 +43,16 @@ export const projects: Project[] = [
     status: "current",
     startDate: "2022-04-01",
     relatedArticles: ["mission-bit-attendance-system"],
+  },
+  {
+    name: "What was here?",
+    slug: "what-was-here",
+    status: "past",
+    startDate: "2026-03-14",
+    link: "https://wwh.johnnylinsf.com",
+    description:
+      "Fun project to explore San Francisco's Archaeology. Search any address to see what used to be there and what is still currently there - all powered by public city data.",
+    techStack: ["Vercel", "Claude"],
   },
   {
     name: "Tastes Like Home",
