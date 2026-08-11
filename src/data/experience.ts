@@ -98,7 +98,7 @@ export const experience: Experience[] = [
   {
     company: "Hatch",
     title: "Product Management Intern",
-    duration: "June 2025 - Present",
+    duration: "June 2025 - August 2026",
     website: "https://hatch.co",
     description: [
       "Led piloting of AI tools to support Hatch's sleep chat programs; evaluated vendors, trained models using proprietary content, and tested performance with prompt workflows and sleep consultant feedback",
