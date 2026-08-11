@@ -2,14 +2,23 @@ import { Project } from "./types";
 
 export const projects: Project[] = [
   {
-    name: "What was here?",
-    slug: "what-was-here",
+    name: "CalGo",
+    slug: "calgo",
     status: "current",
-    startDate: "2026-03-14",
-    link: "https://wwh.johnnylinsf.com",
+    startDate: "2026-06-22",
+    endDate: "2026-08-10",
+    link: "https://calgo-cs160.vercel.app",
     description:
-      "Fun project to explore San Francisco's Archaeology. Search any address to see what used to be there and what is still currently there - all powered by public city data.",
-    techStack: ["Vercel", "Claude"],
+      "A campus amenities map for UC Berkeley, built with Team 404 for CS 160 (User Interface Design and Development).\n\nFinding a gender-inclusive restroom or a bottle filling station in a building you don't know usually means checking a few university sites, a map, and whatever sign is posted on the door. CalGo puts 1,525 amenities across 255 campus buildings in one place: restrooms, water fountains, bottle filling stations, printers, eateries, and lactation rooms. Each one shows its floor, its hours, and its accessibility attributes. You can use it without an account, filter by distance, opening hours, and accessibility, and hand off to Apple Maps, Google Maps, or Waze for directions.\n\nWe ran the full design cycle on it: six needfinding interviews, 33 sketches, two paper prototypes, five competing wireframes, a Figma hi-fi round, and a final usability evaluation. Every finding from that evaluation shipped, and every task beat its time goal. The [case study](https://calgo-cs160.vercel.app/story) walks through the whole process.",
+    techStack: [
+      "React",
+      "Vite",
+      "Leaflet",
+      "Firebase",
+      "Tailwind CSS",
+      "Figma",
+      "Vercel",
+    ],
   },
   {
     name: "Internal project: Mission Bit Volunteer Portal",
@@ -34,6 +43,16 @@ export const projects: Project[] = [
     status: "current",
     startDate: "2022-04-01",
     relatedArticles: ["mission-bit-attendance-system"],
+  },
+  {
+    name: "What was here?",
+    slug: "what-was-here",
+    status: "past",
+    startDate: "2026-03-14",
+    link: "https://wwh.johnnylinsf.com",
+    description:
+      "Fun project to explore San Francisco's Archaeology. Search any address to see what used to be there and what is still currently there - all powered by public city data.",
+    techStack: ["Vercel", "Claude"],
   },
   {
     name: "Tastes Like Home",
