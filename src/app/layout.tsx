@@ -24,12 +24,12 @@ export const metadata: Metadata = {
     template: "%s | Johnny Lin",
   },
   description:
-    "UC Berkeley EECS alum. Operations & Engineering at Tella, Senior Development Specialist at Mission Bit.",
+    "UC Berkeley EECS alum. Operations & Engineering at Tella.",
   metadataBase: new URL("https://johnnylinsf.com"),
   openGraph: {
     title: "Johnny Lin",
     description:
-      "UC Berkeley EECS alum. Operations & Engineering at Tella, Senior Development Specialist at Mission Bit.",
+      "UC Berkeley EECS alum. Operations & Engineering at Tella.",
     url: "https://johnnylinsf.com",
     siteName: "Johnny Lin",
     locale: "en_US",
@@ -39,7 +39,7 @@ export const metadata: Metadata = {
     card: "summary",
     title: "Johnny Lin",
     description:
-      "UC Berkeley EECS alum. Operations & Engineering at Tella, Senior Development Specialist at Mission Bit.",
+      "UC Berkeley EECS alum. Operations & Engineering at Tella.",
     creator: "@johnnylinsf",
   },
 };
