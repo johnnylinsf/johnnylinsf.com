@@ -5,7 +5,7 @@ export const experience: Experience[] = [
   {
     company: "Mission Bit",
     title: "Senior Development Specialist",
-    duration: "January 2026 - Present",
+    duration: "January 2026 - August 2026",
     website: "https://missionbit.org",
     description: [
       "Manage the donor cultivation process and collaborate with the CEO to build a map of different donor types, based on how they've engaged with the organization in the past, to ensure an internally defined and intentional pathway for each donor type",
@@ -71,8 +71,14 @@ export const experience: Experience[] = [
   // Tella
   {
     company: "Tella",
+    title: "Operations & Engineering",
+    duration: "August 2026 - Present",
+    website: "https://tella.com",
+  },
+  {
+    company: "Tella",
     title: "Operations",
-    duration: "August 2025 - Present",
+    duration: "August 2025 - August 2026",
     website: "https://tella.com",
     description: [
       "Managing day-to-day company operations, including compliance and disputing chargebacks",
@@ -197,7 +203,7 @@ export const experience: Experience[] = [
   {
     company: "SEO Scholars San Francisco",
     title: "Scholar",
-    duration: "February 2019 - Present",
+    duration: "February 2019 - August 2026",
     description: [
       "Selected out of more than 1,000 students to participate in a competitive and rigorous eight-year academic program for first-generation students from San Francisco public schools",
       "Receive one-on-one academic, personal, and career support throughout college",

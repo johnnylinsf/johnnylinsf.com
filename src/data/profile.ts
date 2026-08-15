@@ -12,10 +12,9 @@ export const profile: Profile = {
   },
   highlights: [
     "I'm a Product Intern at [Hatch](https://hatch.co)",
-    "I lead Operations at [Tella](https://tella.com)",
-    "I'm a Senior Development Specialist at [Mission Bit](https://missionbit.org)",
+    "I lead Operations & Engineering at [Tella](https://tella.com)",
     "I'm a [Bubble](https://bubble.io) power user and [certified developer](https://bubble.io/certificate/xkky8ygt4g83). Bubble Ambassador since 2024.",
     "If you know me, I give back to my community a lot - [here are some charities I've supported and care about](/charities)",
   ],
-  lastUpdated: "2026-06-19",
+  lastUpdated: "2026-08-14",
 };
