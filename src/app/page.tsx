@@ -16,7 +16,7 @@ const jsonLd = {
   "@type": "Person",
   name: "Johnny Lin",
   url: "https://johnnylinsf.com",
-  jobTitle: "EECS Student & Product Builder",
+  jobTitle: "EECS Alum & Product Builder",
   affiliation: [
     { "@type": "Organization", name: "UC Berkeley" },
     { "@type": "Organization", name: "Hatch" },
