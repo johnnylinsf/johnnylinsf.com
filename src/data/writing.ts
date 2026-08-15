@@ -2,6 +2,14 @@ import { WritingEntry } from "./types";
 
 export const articles: WritingEntry[] = [
   {
+    name: "From Internship to Impact: 14 Months at Hatch",
+    slug: "hatch-internship",
+    description:
+      "Reflecting on 14 months as a Product Intern at Hatch — shipping a new hardware launch, making AI useful across teams, and what building nearly every function of a startup taught me about the kind of product work I want to do.",
+    date: "2026-08-14",
+    wordCount: 650,
+  },
+  {
     name: "The best way to learn AI is to build with it",
     slug: "start-building",
     description:
