@@ -74,6 +74,9 @@ export const experience: Experience[] = [
     title: "Operations & Engineering",
     duration: "August 2026 - Present",
     website: "https://tella.com",
+    description: [
+      "Building Operations with a touch of Engineering at Tella"
+    ],
   },
   {
     company: "Tella",
