@@ -68,6 +68,7 @@ export const skills: SkillGroup[] = [
       "Marketing",
       "Non-profit Management",
       "Nonprofit Organizations",
+      "Government and Community Relations",
     ],
   },
   {
