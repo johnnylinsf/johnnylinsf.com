@@ -13,6 +13,7 @@ const nextConfig: NextConfig = {
     { source: "/bubble.md", destination: "/bubble/md" },
     { source: "/stack.md", destination: "/stack/md" },
     { source: "/privacy-policy.md", destination: "/privacy-policy/md" },
+    { source: "/student-discounts.md", destination: "/student-discounts/md" },
   ],
   images: {
     formats: ["image/avif", "image/webp"],

@@ -22,6 +22,7 @@ export async function GET() {
     { path: "/bubble", label: "Bubble Experience" },
     { path: "/stack", label: "Tech Stack" },
     { path: "/charities", label: "Charities" },
+    { path: "/student-discounts", label: "Student Discounts" },
     { path: "/privacy-policy", label: "Privacy Policy" },
   ];
 
