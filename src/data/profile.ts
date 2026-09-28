@@ -14,6 +14,7 @@ export const profile: Profile = {
     "I lead Operations & Engineering at [Tella](https://tella.com)",
     "I'm a [Bubble](https://bubble.io) power user and [certified developer](https://bubble.io/certificate/xkky8ygt4g83). Bubble Ambassador since 2024.",
     "If you know me, I give back to my community a lot - [here are some charities I've supported and care about](/charities)",
+    "I already miss my .edu email (lol), so [I made a list of 100+ student discounts](/student-discounts)",
   ],
   lastUpdated: "2026-08-14",
 };

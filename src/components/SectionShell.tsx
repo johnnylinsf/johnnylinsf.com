@@ -4,13 +4,11 @@ export default function SectionShell({
   id,
   title,
   seeAllHref,
-  seeAllLabel = "See all",
   children,
 }: {
   id: string;
   title: string;
   seeAllHref?: string;
-  seeAllLabel?: string;
   children: React.ReactNode;
 }) {
   return (
@@ -24,7 +22,7 @@ export default function SectionShell({
             href={seeAllHref}
             className="text-sm text-muted hover:text-foreground transition-colors"
           >
-            {seeAllLabel} &rarr;
+            See all &rarr;
           </Link>
         )}
       </div>
