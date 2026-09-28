@@ -75,7 +75,12 @@ export default function Home() {
 
           <div className="border-t border-border" />
 
-          <SectionShell id="education" title="Education">
+          <SectionShell
+            id="education"
+            title="Education"
+            seeAllHref="/student-discounts"
+            seeAllLabel="Student discounts"
+          >
             <EducationSection />
           </SectionShell>
 

@@ -55,6 +55,7 @@ src/
 │   ├── bubble/         #   "
 │   ├── work-with-me/   #   "
 │   ├── privacy-policy/ #   "
+│   ├── student-discounts/ # Directory page (data-driven, client-side filters) + md/ handler
 │   ├── llms.txt/       # Dynamic llms.txt route handler
 │   └── llms-full.md/   # Dynamic llms-full.md route handler
 ├── components/         # React components
@@ -70,6 +71,7 @@ src/
     ├── skills.ts       # Skills by category
     ├── education.ts    # Education
     ├── freelancing.ts  # Freelancing info
+    ├── student-discounts.ts # Student discount directory, top 10, post-grad picks
     └── types.ts        # All TypeScript interfaces
 public/
 ├── headshot.png        # Also the favicon/apple-icon

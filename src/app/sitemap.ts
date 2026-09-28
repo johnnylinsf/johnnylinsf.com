@@ -14,6 +14,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     "/bubble",
     "/stack",
     "/charities",
+    "/student-discounts",
     "/privacy-policy",
     "/llms.txt",
   ].map((path) => ({
