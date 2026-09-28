@@ -73,47 +73,39 @@ export interface FreelancingInfo {
 export type DiscountCategory =
   | "AI"
   | "Productivity"
-  | "Design & Creative"
-  | "Developer"
-  | "Streaming & Music"
-  | "News & Learning"
-  | "Wellness"
-  | "Hardware"
-  | "Shopping"
-  | "Food & Delivery"
-  | "Travel"
-  | "Phone & Internet"
-  | "Finance";
+  | "Design & video"
+  | "Coding"
+  | "Streaming & music"
+  | "News & learning"
+  | "Health"
+  | "Laptops & gear"
+  | "Shopping & food"
+  | "Travel, phone & money";
 
 export interface StudentDiscount {
-  slug: string;
   name: string;
-  brand: string;
   category: DiscountCategory;
-  /** One-line headline, e.g. "$5.99/mo, Hulu included" */
-  offer: string;
-  regularPrice?: string;
-  studentPrice?: string;
-  /** How long the deal lasts, renewal rules, caps */
-  duration: string;
-  /** Country restrictions */
-  regions: string;
-  eligibility: string;
-  /** How you prove you're a student: SheerID, UNiDAYS, .edu email, etc. */
-  verification: string;
+  /** What you get, e.g. "$6.99/mo with Hulu included (normally $12.99)" */
+  deal: string;
+  /** How long it lasts */
+  length: string;
+  /** Which countries */
+  where: string;
+  /** How you prove you're a student */
+  verify: string;
+  note?: string;
   url: string;
-  notes?: string;
-  /** Tools I actually use */
-  inMyStack?: boolean;
+  iUseIt?: boolean;
+}
+
+export interface DiscountPick {
+  /** Matches a StudentDiscount name */
+  name: string;
+  why: string;
 }
 
 export interface NoStudentDeal {
   brand: string;
   note: string;
   url?: string;
-}
-
-export interface TopPick {
-  slug: string;
-  why: string;
 }

@@ -1,28 +1,24 @@
-import Header from "@/components/Header";
-import Footer from "@/components/Footer";
-import Breadcrumbs from "@/components/Breadcrumbs";
-import StudentDiscountsDirectory, {
-  DiscountRow,
-} from "@/components/StudentDiscountsDirectory";
+import ProseLayout from "@/components/ProseLayout";
+import Content from "@/content/student-discounts.mdx";
+import { DiscountItem, PickList } from "@/components/StudentDiscountList";
 import {
   afterGraduation,
   discountCategories,
+  lastUpdated,
   noStudentDeal,
   studentDiscounts,
-  studentDiscountsMeta,
   topPicks,
 } from "@/data/student-discounts";
 
 export const metadata = {
   title: "Student Discounts",
-  description: studentDiscountsMeta.description,
+  description:
+    "100+ student discounts, starting with the tools I actually use, with how long each one lasts, where it works, and how to verify.",
 };
 
-const bySlug = new Map(studentDiscounts.map((d) => [d.slug, d]));
-
-function SectionHeading({ children }: { children: React.ReactNode }) {
+function Heading({ children }: { children: React.ReactNode }) {
   return (
-    <h2 className="font-[family-name:var(--font-heading)] text-lg font-bold tracking-tight text-foreground mb-2">
+    <h2 className="text-xl font-semibold tracking-tight text-foreground mt-10 mb-4">
       {children}
     </h2>
   );
@@ -30,86 +26,57 @@ function SectionHeading({ children }: { children: React.ReactNode }) {
 
 export default function StudentDiscountsPage() {
   return (
-    <>
-      <Header />
-      <main className="flex-1">
-        <div className="mx-auto max-w-2xl px-6 pt-14 pb-12">
-          <Breadcrumbs items={[{ label: "Student Discounts" }]} />
-          <h1 className="font-[family-name:var(--font-heading)] text-2xl font-bold tracking-tight text-foreground mb-4">
-            {studentDiscountsMeta.title}
-          </h1>
-          <div className="space-y-3 text-sm leading-relaxed text-muted mb-10">
-            {studentDiscountsMeta.intro.map((p, i) => (
-              <p key={i}>{p}</p>
-            ))}
-            <p className="text-xs">
-              Last checked {studentDiscountsMeta.lastVerified}. Deals change
-              often. Confirm the terms on the brand&apos;s page before you pay.
-            </p>
-          </div>
+    <ProseLayout
+      title="Student discounts"
+      breadcrumbs={[{ label: "Student Discounts" }]}
+    >
+      <Content />
 
-          <section className="mb-12">
-            <SectionHeading>My top 10</SectionHeading>
-            <p className="text-sm text-muted mb-3">
-              {studentDiscountsMeta.rankingNote}
-            </p>
-            <ol>
-              {topPicks.map((pick, i) => {
-                const d = bySlug.get(pick.slug);
-                if (!d) return null;
-                return (
-                  <li key={pick.slug}>
-                    <DiscountRow d={d} rank={i + 1} why={pick.why} />
-                  </li>
-                );
-              })}
-            </ol>
-          </section>
+      <Heading>My top 10</Heading>
+      <PickList
+        picks={topPicks}
+        discounts={studentDiscounts}
+        ordered
+        showDeal={false}
+      />
 
-          <section className="mb-12">
-            <SectionHeading>Just graduated? These still work</SectionHeading>
-            <p className="text-sm text-muted mb-3">
-              Deals tied to your age or alumni status instead of enrollment.
-            </p>
-            <ul>
-              {afterGraduation.map((pick) => {
-                const d = bySlug.get(pick.slug);
-                if (!d) return null;
-                return (
-                  <li key={pick.slug}>
-                    <DiscountRow d={d} why={pick.why} />
-                  </li>
-                );
-              })}
-            </ul>
-          </section>
+      <Heading>If you just graduated</Heading>
+      <p className="text-[15px] text-foreground/80 leading-relaxed mb-4">
+        These go by age or alumni status instead of enrollment, so they
+        still work.
+      </p>
+      <PickList picks={afterGraduation} discounts={studentDiscounts} />
 
-          <section className="mb-12">
-            <SectionHeading>The full directory</SectionHeading>
-            <p className="text-sm text-muted mb-4">
-              Tap any row for the fine print: how long it lasts, which
-              countries, and how you verify.
-            </p>
-            <StudentDiscountsDirectory
-              discounts={studentDiscounts}
-              categories={discountCategories}
-            />
-          </section>
-
-          <section>
-            <SectionHeading>Tools I use with no student deal (yet)</SectionHeading>
-            <ul className="space-y-2 text-sm">
-              {noStudentDeal.map((n) => (
-                <li key={n.brand}>
-                  <span className="text-foreground font-medium">{n.brand}</span>
-                  <span className="text-muted">: {n.note}</span>
-                </li>
+      <Heading>All {studentDiscounts.length} discounts</Heading>
+      {discountCategories.map((category) => (
+        <section key={category}>
+          <h3 className="text-lg font-semibold text-foreground mt-8 mb-3">
+            {category}
+          </h3>
+          <ul className="text-[15px] text-foreground/80 space-y-3 mb-4 ml-4 list-disc">
+            {studentDiscounts
+              .filter((d) => d.category === category)
+              .map((d) => (
+                <DiscountItem key={d.name} d={d} />
               ))}
-            </ul>
-          </section>
-        </div>
-      </main>
-      <Footer />
-    </>
+          </ul>
+        </section>
+      ))}
+
+      <Heading>Tools I use that don&apos;t have a student deal (yet)</Heading>
+      <ul className="text-[15px] text-foreground/80 space-y-1 mb-4 ml-4 list-disc">
+        {noStudentDeal.map((n) => (
+          <li key={n.brand} className="leading-relaxed pl-0.5">
+            <strong className="font-semibold text-foreground">{n.brand}</strong>{" "}
+            — {n.note}
+          </li>
+        ))}
+      </ul>
+
+      <hr className="border-border my-8" />
+      <p className="text-[15px] text-foreground/80 leading-relaxed mb-4">
+        <em>Last updated: {lastUpdated}</em>
+      </p>
+    </ProseLayout>
   );
 }
