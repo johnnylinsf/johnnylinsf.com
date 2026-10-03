@@ -62,6 +62,7 @@ ${currentRoles}
 All pages are available as markdown by appending .md to the URL.
 
 - [Homepage](${base}/) | [Full content](${base}/llms-full.md)
+- [Writing RSS feed](${base}/rss.xml)
 ${pagesSection}
 
 ## Writing

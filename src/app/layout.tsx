@@ -26,6 +26,11 @@ export const metadata: Metadata = {
   description:
     "UC Berkeley EECS alum. Operations & Engineering at Tella.",
   metadataBase: new URL("https://johnnylinsf.com"),
+  alternates: {
+    types: {
+      "application/rss+xml": [{ url: "/rss.xml", title: "Johnny Lin — Writing" }],
+    },
+  },
   openGraph: {
     title: "Johnny Lin",
     description:
